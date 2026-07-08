@@ -19,12 +19,12 @@ export default function App() {
       <Header onShareStoryClick={() => setIsShareStoryModalOpen(true)} />
       
       <main>
-        <HeroSection onShareStoryClick={() => setIsShareStoryModalOpen(true)} />
-        <StoriesSection />
-        <ForumSection />
-        <CoachingSection onBookingClick={() => setIsBookingModalOpen(true)} />
-        <WebinarSection />
-        <BadgesSection />
+        <section id="home"><HeroSection onShareStoryClick={() => setIsShareStoryModalOpen(true)} /></section>
+        <section id="storie"><StoriesSection /></section>
+        <section id="forum"><ForumSection /></section>
+        <section id="coaching"><CoachingSection onBookingClick={() => setIsBookingModalOpen(true)} /></section>
+        <section id="webinar"><WebinarSection /></section>
+        <section id="badge"><BadgesSection /></section>
       </main>
 
       <Footer />
